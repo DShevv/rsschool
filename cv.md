@@ -1,4 +1,29 @@
 # Dmitry Shevtsov
 
-**Email:**          dima150754@gmail.com
-**LinkedIn:**       [Link to Profile](https://www.linkedin.com/in/dmitriy-shevtsov-a0b4911a2/)
+**Email:**          dima150754@gmail.com  
+**LinkedIn:**       [Link to Profile](https://www.linkedin.com/in/dmitriy-shevtsov-a0b4911a2/)  
+
+
+### Goals and Aspirations
+
+I have always wanted to be a sought-after specialist,  
+create things, services and applications that will be  
+useful to people, make their life easier. I also want  
+to note the ability to quickly learn from examples,  
+punctuality and responsibility.
+
+
+### Programming Skills 
+
+##### Languages:
+
+* C#
+* JavaScript
+* Delphi
+
+##### Frameworks:
+
+* React
+* NodeJS
+* Express
+
