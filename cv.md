@@ -102,7 +102,7 @@ class TablePaginationActions extends React.Component {
 
 ### Work experience
 
-{ *Place for your advertisement*}
+{ *Place for your advertisement* }
 
 
 ### Education 
