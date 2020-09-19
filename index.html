@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <meta name="viewport" content="width=1440, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <section class="container">
             <section class="photoCont">
@@ -83,10 +82,83 @@
             
 
         </section>
-    
-       
+
     </section>
-    
+    <section class="code">
+        <details >
+            <summary>Code example</summary>
+            <code>
+                const actionsStyles = theme => ({<br>
+                    root: {<br>
+                    flexShrink: 0,<br>
+                    color: theme.palette.text.secondary,<br>
+                    marginLeft: theme.spacing.unit * 2.5,<br>
+                    },<br>
+                });<br>
+                <br>
+                class TablePaginationActions extends React.Component {<br>
+                    handleFirstPageButtonClick = event => {<br>
+                        this.props.onChangePage(event, 0);<br>
+                    };<br>
+                    <br>
+                    handleBackButtonClick = event => {<br>
+                        this.props.onChangePage(event, this.props.page - 1);<br>
+                    };<br>
+                    <br>
+                    handleNextButtonClick = event => {<br>
+                        this.props.onChangePage(event, this.props.page + 1);<br>
+                    };<br>
+                    <br>
+                    handleLastPageButtonClick = event => {<br>
+                        this.props.onChangePage(<br>
+                        event,<br>
+                        Math.max(0, Math.ceil(this.props.count / this.props.rowsPerPage) - 1),<br>
+                        );<br>
+                    };<br>
+                    <br>
+                    render() {<br>
+                    const { classes, count, page, rowsPerPage, theme } = this.props;<br>
+                    <br>
+                    return (<br>
+                        <div className={classes.root}><br>
+                            <IconButton<br>
+                            onClick={this.handleFirstPageButtonClick}<br>
+                            disabled={page === 0}<br>
+                            aria-label="First Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <LastPageIcon /> : <FirstPageIcon />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleBackButtonClick}<br>
+                            disabled={page === 0}<br>
+                            aria-label="Previous Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleNextButtonClick}<br>
+                            disabled={page >= Math.ceil(count / rowsPerPage) - 1}<br>
+                            aria-label="Next Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleLastPageButtonClick}<br>
+                            disabled={page >= Math.ceil(count / rowsPerPage) - 1}<br>
+                            aria-label="Last Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <FirstPageIcon /> : <LastPageIcon />}<br>
+                            </IconButton><br>
+                        </div><br>
+                    );<br>
+                    }<br>
+                }<br>
+            </code>
+        </details>
+    </section>
+        
+ 
+
 
 </body>
 </html>
