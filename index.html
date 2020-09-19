@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="container">
+            <section class="photoCont">
+                <img class="photo" src="VqzcG7ikp-M.jpg" alt="My photo">
+            </section>
+            <section class="nameProf">
+                <h1>Dmitry Shevtsov</h1>
+                <h5 class="spec">Fullstack developer</h5>
+            </section>
+        </section>   
+    </header>
+
+    <section class="mainInfo">
+        <aside>
+            <h4>Contact</h4>
+            <table>
+                <tr>
+                    <td><img class="icon" src="email.png" alt="Email icon"> </td>
+                    <td>dima150754@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><img class="icon" src="linkedin.png" alt=""></td>
+                    <td><a href="https://www.linkedin.com/in/dmitriy-shevtsov-a0b4911a2/">Link to profile</a></td>
+                </tr>
+            </table>
+
+            <h4>Languages</h4>
+            <table>
+                <tr>
+                    <td class="lang">Russian</td>
+                    <td>Native</td>
+                </tr>
+                <tr>
+                    <td class="lang">English</td>
+                    <td>Intermediate</td>
+                </tr>
+            </table>  
+                    
+            <h4>Programming skills</h4>
+            <table>
+                <tr>
+                    <td class="lang">Languages</td>
+                    <td>C#, JavaScript, Delphi</td>
+                </tr>
+                <tr>
+                    <td class="lang">Frameworks</td>
+                    <td>ReactJS, NodeJS, Express</td>
+                </tr>
+            </table>  
+                
+                    
+                    
+                
+        </aside>
+
+        <section class="workEdu">
+            <h4>Work experience</h4>
+            <section class="work">              
+                <img class="ads" src="hqdefault.jpg" alt="">
+            </section>
+            
+            <h4>Education</h4>
+            <section class="edu">
+                <h5>GSMC</h5>
+                <section class="years">2015-2019</section>
+                <section class="eduSpec">/ Technician-programmer</section> 
+                
+                <h5>BSUIR</h5>
+                <section class="years">2019-2022</section>
+                <section class="eduSpec">/ Systems engineer</section>
+            </section>
+            
+
+        </section>
+
+    </section>
+    <section class="code">
+        <details >
+            <summary>Code example</summary>
+            <code>
+                const actionsStyles = theme => ({<br>
+                    root: {<br>
+                    flexShrink: 0,<br>
+                    color: theme.palette.text.secondary,<br>
+                    marginLeft: theme.spacing.unit * 2.5,<br>
+                    },<br>
+                });<br>
+                <br>
+                class TablePaginationActions extends React.Component {<br>
+                    handleFirstPageButtonClick = event => {<br>
+                        this.props.onChangePage(event, 0);<br>
+                    };<br>
+                    <br>
+                    handleBackButtonClick = event => {<br>
+                        this.props.onChangePage(event, this.props.page - 1);<br>
+                    };<br>
+                    <br>
+                    handleNextButtonClick = event => {<br>
+                        this.props.onChangePage(event, this.props.page + 1);<br>
+                    };<br>
+                    <br>
+                    handleLastPageButtonClick = event => {<br>
+                        this.props.onChangePage(<br>
+                        event,<br>
+                        Math.max(0, Math.ceil(this.props.count / this.props.rowsPerPage) - 1),<br>
+                        );<br>
+                    };<br>
+                    <br>
+                    render() {<br>
+                    const { classes, count, page, rowsPerPage, theme } = this.props;<br>
+                    <br>
+                    return (<br>
+                        <div className={classes.root}><br>
+                            <IconButton<br>
+                            onClick={this.handleFirstPageButtonClick}<br>
+                            disabled={page === 0}<br>
+                            aria-label="First Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <LastPageIcon /> : <FirstPageIcon />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleBackButtonClick}<br>
+                            disabled={page === 0}<br>
+                            aria-label="Previous Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleNextButtonClick}<br>
+                            disabled={page >= Math.ceil(count / rowsPerPage) - 1}<br>
+                            aria-label="Next Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}<br>
+                            </IconButton><br>
+                            <IconButton<br>
+                            onClick={this.handleLastPageButtonClick}<br>
+                            disabled={page >= Math.ceil(count / rowsPerPage) - 1}<br>
+                            aria-label="Last Page"<br>
+                            ><br>
+                            {theme.direction === 'rtl' ? <FirstPageIcon /> : <LastPageIcon />}<br>
+                            </IconButton><br>
+                        </div><br>
+                    );<br>
+                    }<br>
+                }<br>
+            </code>
+        </details>
+    </section>
+        
+ 
+
+
+</body>
+</html>
